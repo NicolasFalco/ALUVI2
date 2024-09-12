@@ -213,7 +213,7 @@ padding: var(--pading-container);
 }
 
 .price__element{
-    background-image: url(/imagenes/aluminioNordical.jpg);
+
     background-size: cover;
     background-position: center;
     background-color: #e5e5f7;
