@@ -45,17 +45,15 @@
 
         <section class="hero__container container">
             <h1 class="hero__title">Más de 30 años de experiencia que nos avala</h1>
-            <p class="hero__paragraph">
-                Elige aprender css de una vez por todas y deja de perder el tiempo
-            </p>
+           
             <a href="#" class="cta">PEDI TU COTIZACION</a>
         </section>
     </header>
 
     <main>
         <section class="container about">
-            <h2 class="subtitle">Seguinos en nuestras redes!</h2>
-            <p class="about__paragraph"> Tenemos todo lo necesario para que veas y aprendas</p>
+            <h2 class="subtitle">¡Envios a toda Argentina!</h2>
+            <p class="about__paragraph"> Tenemos todo lo necesario para tu obra</p>
 
             <div class="about__main">
                 <article class="about__icons">
@@ -130,174 +128,92 @@
             </div>
         </section>
 
-        <section id="catalogo" class="price container">
-            <h2 class="subtitle">¡Catalogo de nuestros productos!</h2>
-            <div class="price__table">
-                <div img class="price__element">
-                    <img src="./imagenes/aluminioHA62.jpg" alt="">
-                    <h3 class="price__price">PVC</h3>
-                    <div class="price__items">
-                        <p class="price__features">El aluminio HA62 es una aleación versátil y resistente que se utiliza en diversas industrias debido a sus propiedades mecánicas equilibradas y su resistencia a la corrosión. Es una excelente opción para aplicaciones donde se requiere durabilidad y bajo mantenimiento.</p>
-                        
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
+        
 
                 
-                <div class="price__element">
-                    <img src="./imagenes/aluminioRotonda640.jpg" alt="">
-                    <h3 class="price__price">Rotonda 640</h3>
-                    <div class="price__items">
-                        <p class="price__features">"Aluminio Rotonda 640" parece hacer referencia a un perfil de aluminio redondo, comúnmente usado en una variedad de aplicaciones estructurales y decorativas.</p>
+                <section id= "catalogo" class="contenido">
+                    <div class="mostrador" id="mostrador">
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">ALUMINIO HA62</p>
+                              
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioRotonda640.jpg" alt="">
+                                </div>
+                                <p class="descripcion" id>ALUMINIO ROTONDA 640</p>
+                               
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/vidrioblindex.jpg" alt="">
+                                </div>
+                                <p class="descripcion">VIDRIO BLINDEX
+                                </p>
+                                
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">NIKE LOW-TOP</p>
+                                <span class="precio">$ 1.800</span>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">NIKE BLAZER 97</p>
+                                <span class="precio">$ 130</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">NIKE LEGEND ESENTIAL</p>
+                                <span class="precio">$ 2.000</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">NIKE AIR ZOOM</p>
+                                <span class="precio">$ 2.500</span>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                                <div class="contenedor-foto">
+                                    <img src="./imagenes/aluminioHA62.jpg" alt="">
+                                </div>
+                                <p class="descripcion">NIKE TERRA KING</p>
+                                <span class="precio">$ 1.800</span>
+                            </div>
+                        </div> 
                     </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <img src="./imagenes/frenteVidriado.jpg" alt="">
-                    <h3 class="price__price">Frente Vidriado</h3>
-                    <div class="price__items">
-                        <p class="price__features">Un "frente vidriado" se refiere a una estructura o fachada de un edificio o espacio que está principalmente compuesto por vidrio. Este tipo de diseño es muy popular en arquitectura moderna, especialmente en edificios comerciales, oficinas, y residenciales de alta gama, debido a su estética elegante, la capacidad de maximizar la entrada de luz natural, y su capacidad para ofrecer vistas panorámicas.</p>
-                        
+                    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                    <div class="seleccion" id="seleccion">
+                        <div class="cerrar" onclick="cerrar()">
+                            &#x2715
+                        </div>
+                        <div class="info">
+                            <img src="imagenes/aluviverde__1_-removebg-preview.png" alt="" id="img">
+                            <h2 id="modelo">ALUMINIO HA62</h2>
+                            <p id="descripcion">ALUMINIO SOÑADO</p>
+            
+                            <span class="precio" id="precio"></span>
+            
+                            <div class="fila">
+                                
+                                <button>Consultar</button>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                   <img src="./imagenes/" alt="">
-                    <h3 class="price__price">Mamparas</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Mamparas</p>
-                    <h3 class="price__price">40</h3>
-                    <div class="price__items">
-                        <p class="price__features">Flexbox</p>
-                        <p class="price__features">Lauyaut</p>
-                        <p class="price__features">Responsive</p>
-                    </div>
-                    <a href="#" class="price__cta">Cotiza ahora!</a>
-                </div>
-
-            </div>
-        </section>
+                </section>
 
         <section class="knowledge">
             <div class="knowledge__container container">
@@ -315,29 +231,58 @@
 
         <section class="questions container">
             <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eius expedita! Amet minima optio nostrum rem. Quae at tempore vel harum rem impedit modi enim, quasi aspernatur inventore adipisci odit!</p>
-
+            
             <section class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Realizamos trabajos afuera?
+                        <h3 class="questions__title">Etica Empresarial
                             <span class="questions__arrow">
                                 <img src="./imagenes/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">Si en Aluvi, realizamos trabajos dentro como fuera de Rio Tercero</p>
+                        <p class="questions__show">En Aluvi, entendemos que la ética empresarial es un pilar fundamental para construir relaciones de confianza y generar un impacto positivo en nuestra comunidad. Nos comprometemos a mantener los más altos estándares de conducta profesional, respetando a nuestros empleados, clientes, proveedores, y el entorno en el que operamos.
+
+                            1. Compromiso con la Calidad y la Innovación
+                            Nos dedicamos a producir aluminio de alta calidad, respetando las normas y estándares nacionales e internacionales. Fomentamos la innovación constante en nuestros procesos para ofrecer soluciones sostenibles y eficientes, que añadan valor a nuestros clientes y respeten el medio ambiente.
+                            
+                            2. Respeto por el Medio Ambiente
+                            Aluvi se compromete a operar de manera responsable, minimizando el impacto ambiental de nuestras actividades. Priorizamos el uso eficiente de los recursos naturales, implementamos prácticas de reciclaje y trabajamos en el desarrollo de tecnologías limpias que reduzcan nuestra huella de carbono.
+                            
+                            3. Responsabilidad Social
+                            Nos sentimos profundamente conectados con la comunidad de Río Tercero y sus alrededores. Por ello, buscamos generar un impacto positivo a través del empleo digno, la capacitación constante y el apoyo a iniciativas locales que promuevan el desarrollo económico y social.
+                            
+                            4. Integridad y Transparencia
+                            Actuamos con integridad en todas nuestras relaciones comerciales. Valoramos la honestidad y la transparencia, cumpliendo con nuestras obligaciones legales, fiscales y contractuales. Rechazamos cualquier tipo de corrupción, soborno o conducta que comprometa nuestros valores éticos.
+                            
+                            5. Relaciones Laborales Justas
+                            En Aluvi, promovemos un ambiente de trabajo seguro, inclusivo y respetuoso. Nos comprometemos a cumplir con todas las normativas laborales, ofreciendo oportunidades equitativas para todos nuestros empleados, sin discriminación de género, raza, religión o cualquier otra condición.
+                            
+                            6. Confidencialidad y Protección de Datos
+                            Entendemos la importancia de proteger la información confidencial de la empresa y de nuestros socios comerciales. Nos comprometemos a salvaguardar la información sensible y a respetar las normativas vigentes sobre protección de datos y privacidad.
+                            
+                            7. Compromiso con la Seguridad
+                            La seguridad es una prioridad en Aluvi. Cumplimos estrictamente con las normativas de seguridad industrial y capacitamos constantemente a nuestros empleados para garantizar que nuestras instalaciones sean un lugar seguro para todos.
+                            
+                            8. Desarrollo de Proveedores
+                            Aluvi establece relaciones justas y equitativas con todos sus proveedores, priorizando a aquellos que comparten nuestros valores éticos. Fomentamos el desarrollo de proveedores locales y promovemos prácticas comerciales basadas en el respeto mutuo.
+                            
+                            9. Cumplimiento Legal
+                            Nos comprometemos a cumplir con todas las leyes y regulaciones aplicables a nuestra actividad industrial y comercial, tanto a nivel local, provincial como nacional.
+                            
+                            10. Mejora Continua
+                            Buscamos constantemente mejorar nuestros procesos, productos y servicios, fomentando una cultura de aprendizaje, innovación y responsabilidad que nos permita adaptarnos a los cambios y contribuir de manera sostenible al crecimiento de la industria del aluminio.</p>
                     </div>
                 </article>
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuanto tarda la instalacion?
+                        <h3 class="questions__title">Historia de nuestra empresa
                             <span class="questions__arrow">
                                 <img src="./imagenes/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">Bueno, eso va a depender de lo que el cliente requiera</p>
+                        <p class="questions__show">Aca se pone algo</p>
                     </div>
                 </article>
                 <article class="questions__padding">
@@ -357,11 +302,7 @@
             </section>
         </section>
 
-        <section class="questions__offter">
-            <h2 class="subtitle">Contactanos para un presupuesto detallado</h2>
-            <p class="questions__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio assumenda reprehenderit hic aspernatur culpa iusto magni, eaque a ut laboriosam, illum alias numquam asperiores, consequatur nam blanditiis soluta nemo.</p>
-            <a href="#" class="cta">Consulta ahora!</a>
-        </section>
+    
     </main>
 
 
@@ -389,19 +330,17 @@
                 </ul>
             </nav>
 
-            <form action="" class="footer__form">
-                <h2 class="footer__newsletter">suscribete</h2>
+            <form action="" class="footer__form" id="whatsappForm">
+                <h2 class="footer__newsletter">Dejanos tu mensaje</h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="email" class="footer__input">
-                    <input type="submit" value="Registrate" class="footer__submit">
+                    <input type="text" placeholder="mensaje" class="footer__input" id="mensaje">
+                    <input type="submit" value="Enviar" class="footer__submit">
                 </div>
             </form>
         </section>
 
         <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="" class="footer__icons"><img src="./imagenes/facebook.svg" class="footer__img"></a>
-            </div>
+       
 
             <h3 class="footer__copyright">Derechos Reservados &copy; Aluvi Aberturas</h3>
         </section>
@@ -410,5 +349,7 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/catalogo.js"></script>
+    <script src="./js/whatsapp.js"></script>
 </body>
 </html>
